@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+* button {
+    background-color: white;
+    border: 1px solid rgb(5, 179, 71);
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .4s ease all;
+}
+* button:hover {
+    cursor: pointer;
+    background-color: rgb(5, 179, 71);
+    transform: scale(1.05);
+    box-shadow: 0 0 7px 3px rgb(102, 102, 102);
+}
+.button_clear_localstorige {
+    width: 190px;
+    height: 50px;
+    font-size: 14px;
+    background-color: rgb(5, 179, 71);
+    border: 1px solid white;
+}
+.button_clear_localstorige:hover {
+    background-color: white;
+}
+.clear_localstorige {
+    padding: 20px 0;
+}
+body::-webkit-scrollbar {
+    width: 0;
+}
+input {
+    outline: none;
+}
+
+    /* Шапка */
+header {
+    background-color: rgb(5, 179, 71);
+    height: auto;
+}
+.header_container {
+    max-width: 1170px;
+    margin: 0 auto;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1;
+    height: 100%;
+    padding: 0 15px;
+    color: white;
+    text-shadow: black 0 0 5px;
+}
+.header_title {
+    height: auto;
+    display: flex;
+    height: inherit;
+    align-items: center;
+}
+.hurray {
+    color: white;
+    text-decoration: none;
+}
+    /* Основной раздел */
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+main {
+    padding: 30px 15px;
+}
+
+.list_empty {
+    padding-top: 30px;
+    font-size: 26px;
+    text-align: center;
+    color: rgb(199, 199, 199);
+}
+
+.container_button_add_book {
+    padding-bottom: 15px;
+}
+.button_add_book,
+.button_edit {
+    width: 240px;
+    height: 50px;
+}
+.container_input_search {
+    padding: 30px 0 30px;
+}
+.input_search {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+.container_book {
+    display: flex;
+    padding: 12px;
+    border: 1px solid black;
+    border-bottom: 0;
+    align-items: center;
+}
+.container_book:last-child {
+    border-bottom: 1px solid black;
+}
+.container_book_cover,
+.container_book_description,
+.container_button_remove {
+    flex-grow: 1;
+}
+    /* Обложка книги */
+.container_book_cover {
+    min-height: 120px;
+    max-width: 110px;
+}
+img {
+    display: block;
+}
+.book_cover {
+    min-height: inherit;
+    max-width: inherit;
+}
+    /* Описание книги */
+.container_book_description {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-left: 25px;
+    font-size: 26px;
+}
+.name {
+    font-weight: bold;
+}
+    /* Кнопки книги */
+.container_button_edit {
+    padding-bottom: 10px;
+}
+.button_edit,
+.button_remove {
+    width: 190px;
+    height: 40px;
+    font-size: 16px;
+}
+
+    /* Форма */
+.container_form {
+    border: 1px solid black;
+    padding: 25px;
+}
+.container_form_title {
+    padding-bottom: 50px;
+    font-size: 38px;
+    font-weight: bold;
+}
+.all_input {
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 20px;
+}
+label {
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.pad_b_20 {
+    border: 1px solid rgb(197, 197, 197);
+    height: 40px;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 14px;
+}
+.pad_b_20::placeholder {
+    color:rgb(161, 161, 161);
+}
+.container_buuton_form {
+    display: flex;
+    padding-top: 30px;
+}
+.buuton_cancel,
+.buuton_save {
+    width: 150px;
+    height: 40px;
+}
+.container_buuton_cancel {
+    padding-left: 30px;
+}
+
+.page-enter {
+    transform: scale(0);
+  }
+  .page-enter-active {
+    transform: scale(1);
+    transition: 0.5s ease all;
+  }
+  .page-exit {
+    transform: scale(0);
+  }
+  .page-exit-active {
+    transform: scale(1);
+    transition: 0.5s ease all;
+  }
+  .book-enter {
+      opacity: 0;
+  }
+  .book-enter-active {
+      opacity: 1;
+    transition: 1s ease all;
+  }
+  .book-exit {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .book-exit-active {
+    opacity: 0;
+    transition: .7s ease all;
+  }
+  
+  
