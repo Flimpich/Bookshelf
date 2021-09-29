@@ -213,7 +213,6 @@ label {
   }
   .book-exit {
     opacity: 1;
-    transform: translateX(0);
   }
   .book-exit-active {
     opacity: 0;
